@@ -10,8 +10,6 @@ public class Transaction {
     private String location;
     private boolean flagged;
 
-    public
-
     public Transaction(Long userId, String company, Double amount, LocalDateTime timestamp, String location, boolean flagged) {
         this.userId = userId;
         this.company = company;
