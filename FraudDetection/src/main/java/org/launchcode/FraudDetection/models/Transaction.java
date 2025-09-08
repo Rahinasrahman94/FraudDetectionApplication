@@ -2,11 +2,13 @@ package org.launchcode.FraudDetection.models;
 
 import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
 public class Transaction {
     @Id
+    @GeneratedValue
     private Long id;
     private Long userId;
     private String company;
@@ -14,11 +16,6 @@ public class Transaction {
     private LocalDateTime timestamp;
     private String location;
     private boolean flagged;
-    public Transaction()
-    {
-
-    }
-
     public Transaction(Long userId, String company, Double amount, LocalDateTime timestamp, String location, boolean flagged) {
         this.userId = userId;
         this.company = company;
