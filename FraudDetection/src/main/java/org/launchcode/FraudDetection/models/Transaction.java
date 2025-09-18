@@ -10,6 +10,7 @@ public class Transaction {
     @Id
     @GeneratedValue
     private Long id;
+
     private Long userId;
     private String company;
     private Double amount;
